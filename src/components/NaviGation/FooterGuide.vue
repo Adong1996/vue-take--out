@@ -36,7 +36,8 @@ export default {
   },
   methods: {
     goPath(path) {
-      this.$router.push(path)
+      if(path !== this.$route.path) this.$router.push(path) 
+      else window.location = path
     }
   }
 
@@ -53,7 +54,7 @@ export default {
     bottom 0
     width 100%
     height 50px
-    
+    background #fff
     .guideItem
       margin-top 10px
       display flex
