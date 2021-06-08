@@ -6,7 +6,8 @@ import Profile from "../pages/Profile/Profile.vue";
 export default [
   {
     path: '/',
-    require: Msize
+    require: Msize,
+    
   },
   {
     path: '/login',
@@ -14,18 +15,30 @@ export default [
   },
   {
     path: '/msize',
-    component: Msize
+    component: Msize,
+    meta: {
+      isShowFooter: true
+    }
   },
   {
     path: '/search',
-    component: Search
+    component: Search,
+    meta: {
+      isShowFooter: true
+    }
   },
   {
     path: '/order',
-    component: Order
+    component: Order,
+    meta: {
+      isShowFooter: true
+    }
   },
   {
     path: '/profile',
-    component: Profile
+    component: Profile,
+    meta: {
+      isShowFooter: true
+    }
   }
 ]
